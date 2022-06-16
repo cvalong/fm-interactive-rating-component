@@ -1,10 +1,13 @@
 :root {
     --primary: hsl(25, 97%, 53%);
     
+    --neutralDarkest: hsl(228, 20%, 9%);
     --neutralDarker: hsl(216, 12%, 8%);
+
     --neutralDark: hsl(213, 19%, 18%);
+
     --neutral: hsl(216, 12%, 54%);
-    --neutralLight: hsl(217, 12%, 63%);
+    --neutralLight: hsl(217, 12%, 63%, 0.25);
     --neutralLighter: hsl(0, 0%, 100%);
 }  
 /* global styles */
@@ -25,16 +28,82 @@ html {
 
 body {
     font-family: 'Overpass', sans-serif;
-    font-size: 1.125rem;
+    font-size: 0.9375rem;
     color: var(--neutral);
     line-height: 1.5;
-    font-weight: 300;
+    font-weight: 400;
+    text-align: left;
+}
+
+h1 {
+    color: var(--neutralLighter);
+    font-weight: 700;
+    line-height: 1;
+}
+
+.button {
+    color: var(--neutralLighter);
+}
+
+.thank-you-state {
+    text-align: center;
+}
+
+.select-text {
+    color: var(--primary);
 }
   
 /* layout */
+
 body {
     display: grid;
     min-height: 100vh;
     place-items: center;
-    background: var(--neutralDarker);
+    background: var(--neutralDarkest);
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background: var(--neutralDark);
+    border-radius: 15px;
+    max-width: 35ch;
+    margin: 1.5rem;
+}
+
+.card-content {
+    padding: 1.25rem;
+}
+
+img {
+    padding: .75rem;
+}
+
+.icon {
+    background: var(--neutralLight);
+    border-radius: 50px;
+}
+
+/*form layout*/
+
+.radio-holder,
+.button-holder {
+    text-align: center;
+}
+
+.button {
+    background: var(--primary);
+    border-radius: 50px;
+}
+
+/* Thank you state layout*/
+
+.select-text {
+    background: var(--neutralLight);
+    border-radius: 50px;
 }

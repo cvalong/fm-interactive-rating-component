@@ -14,33 +14,45 @@
 
 </head>
 <body>
+  <div class="container">
+    <!-- Rating state start -->
+    <div class="rating-state card">
+      <form class="card-content">
+        <img class="icon" src="/images/icon-star.svg" alt="orange star icon">
+        <h1>How did we do?</h1>
+        <p>Please let us know how we did with your support request. All feedback is appreciated 
+          to help us improve our offering!</p>
+        <div class="radio-holder">
+          <input type="radio" id="1" name="rating" value="1">
+          <label for="1">1</label>
+          <input type="radio" id="2" name="rating" value="2">
+          <label for="2">2</label>
+          <input type="radio" id="3" name="rating" value="3">
+          <label for="3">3</label>
+          <input type="radio" id="4" name="rating" value="4">
+          <label for="4">4</label>
+          <input type="radio" id="5" name="rating" value="5">
+          <label for="5">5</label>
+        </div>
+        <div class="button-holder">
+          <input class="button" type="submit" value="Submit">
+        </div>
+      </form>
+    </div>
+    <!-- Rating state end -->
 
-  <!-- Rating state start -->
-  <div class="rating-state">
-    <h1>How did we do?</h1>
-    <p>Please let us know how we did with your support request. All feedback is appreciated 
-      to help us improve our offering!</p>
-    <p>1</p>
-    <p>2</p>
-    <p>3</p>
-    <p>4</p>
-    <p>5</p>
-    <button>Submit</button>  
+    <!-- Thank you state start -->
+    <div class="thank-you-state card">
+      <div class="card-content">
+        <img src="/images/illustration-thank-you.svg" alt="payment illustration">
+        <p class="select-text">You selected <!-- Add rating here --> out of 5</p>
+        <h1>Thank you!</h1>
+        <p>We appreciate you taking the time to give a rating. If you ever need more support, 
+          don’t hesitate to get in touch!</p>
+      </div>
+    </div>
+    <!-- Thank you state end -->
   </div>
-  <!-- Rating state end -->
-
-  <!-- Thank you state start -->
-  <div class="thank-you-state">
-    <p class="selection-text">You selected <!-- Add rating here --> out of 5</p>
-    <h1>Thank you!</h1>
-    <p>We appreciate you taking the time to give a rating. If you ever need more support, 
-      don’t hesitate to get in touch!</p>  
-  </div>
-  <!-- Thank you state end -->
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Christopher Long</a>.
-  </div>
+  
 </body>
 </html>
