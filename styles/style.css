@@ -1,3 +1,40 @@
+:root {
+    --primary: hsl(25, 97%, 53%);
+    
+    --neutralDarker: hsl(216, 12%, 8%);
+    --neutralDark: hsl(213, 19%, 18%);
+    --neutral: hsl(216, 12%, 54%);
+    --neutralLight: hsl(217, 12%, 63%);
+    --neutralLighter: hsl(0, 0%, 100%);
+}  
+/* global styles */
+  
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+  
+body,
+html {
+    margin: 0;
+    padding: 0;
+}
+ 
+/* typography */
+
 body {
     font-family: 'Overpass', sans-serif;
+    font-size: 1.125rem;
+    color: var(--neutral);
+    line-height: 1.5;
+    font-weight: 300;
+}
+  
+/* layout */
+body {
+    display: grid;
+    min-height: 100vh;
+    place-items: center;
+    background: var(--neutralDarker);
 }
