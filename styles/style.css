@@ -106,7 +106,10 @@ img {
 }
 
 .radio-holder input[type="radio"] {
-    display: none; /*removes keyboard accessibility however*/
+    position: fixed;
+    opacity: 0;
+    pointer-events: none; /*removes tab keyboard accessibility 
+    however, allows for up and down arrows for nav*/
 }
 
 .radio-holder label {
@@ -118,8 +121,13 @@ img {
     background: var(--neutralLight);
 }
 
-.radio-holder input[type="radio"]:checked+label {
+.radio-holder label:hover {
     background: var(--primary);
+    color: var(--neutralLighter);
+}
+
+.radio-holder input[type="radio"]:checked+label {
+    background: var(--neutral);
     color: var(--neutralLighter);
 }
 
@@ -128,6 +136,7 @@ img {
     text-transform: uppercase;
     letter-spacing: 0.5ch;
 }
+
 .button {
     cursor: pointer;
     min-width: 280px;
@@ -136,6 +145,11 @@ img {
     border: none;
     border-radius: 50px;
     background: var(--primary);
+}
+
+.button:hover {
+    background: var(--neutralLighter);
+    color: var(--primary);
 }
 
 /* Thank you state layout*/
