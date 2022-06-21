@@ -28,15 +28,16 @@ html {
 
 body {
     font-family: 'Overpass', sans-serif;
-    font-size: 0.9375rem;
+    font-size: 0.9375rem; /*15px to match the design*/
     color: var(--neutral);
-    line-height: 1.5;
+    line-height: 1.55;
     font-weight: 400;
     text-align: left;
 }
 
 h1 {
     color: var(--neutralLighter);
+    font-size: 1.375rem;
     font-weight: 700;
     line-height: 1;
 }
@@ -72,12 +73,13 @@ body {
 .card {
     background: var(--neutralDark);
     border-radius: 15px;
-    max-width: 35ch;
+    width: 330px;
+    height: 365px;
     margin: 1.5rem;
 }
 
 .card-content {
-    padding: 1.25rem;
+    padding: 1.09375rem /*17.5px to match the design better*/
 }
 
 img {
@@ -96,9 +98,44 @@ img {
     text-align: center;
 }
 
-.button {
+.radio-holder {/*changes features from the default container class*/
+    justify-content: space-around;
+    gap: 0.3rem;
+    margin: 1.125rem 0; /*margin: vertical horizontal*/
+    font-size: 0.75rem;
+}
+
+.radio-holder input[type="radio"] {
+    display: none; /*removes keyboard accessibility however*/
+}
+
+.radio-holder label {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    padding: 0.5rem;
+    border-radius: 100%;
+    background: var(--neutralLight);
+}
+
+.radio-holder input[type="radio"]:checked+label {
     background: var(--primary);
+    color: var(--neutralLighter);
+}
+
+.button {
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5ch;
+}
+.button {
+    cursor: pointer;
+    min-width: 280px;
+    min-height: 45px;
+    margin: 1rem 0;
+    border: none;
     border-radius: 50px;
+    background: var(--primary);
 }
 
 /* Thank you state layout*/
