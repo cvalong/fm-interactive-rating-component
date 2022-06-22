@@ -46,7 +46,7 @@ h1 {
     color: var(--neutralLighter);
 }
 
-.thank-you-state {
+#thank-you-state {
     text-align: center;
 }
 
@@ -154,6 +154,9 @@ img {
 
 /* Thank you state layout*/
 
+#thank-you-state {
+    display: none; /*default state before submission*/
+}
 .select-text {
     background: var(--neutralLight);
     border-radius: 50px;
