@@ -14,7 +14,6 @@ This is a solution to the [Interactive rating component challenge on Frontend Me
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 **Note: Delete this note and update the table of contents based on what sections you keep.**
 
@@ -33,18 +32,10 @@ Users should be able to:
 
 ![](./screenshot.jpg)
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
-
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [github.io](https://cvalong.github.io/fm-interactive-rating-component/)
 
 ## My process
 
@@ -55,11 +46,6 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
@@ -93,21 +79,33 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+Naming style
+- [CSS color variables](https://css-tricks.com/what-do-you-name-color-variables/) - various naming styles
 
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+CSS Selection
+-[how to select radio buttons and label](https://stackoverflow.com/questions/4641752/css-how-to-style-a-selected-radio-buttons-label)
+
+-[Pure CSS: Accessible Checkboxes and Radios Buttons](https://medium.com/claritydesignsystem/pure-css-accessible-checkboxes-and-radios-buttons-54063e759bb3) - adding custom styles to default checkboxes and radio buttons using just CSS is a pain...
+
+Layout
+- [form submit button](https://stackoverflow.com/questions/4221263/center-form-submit-buttons-html-css) - Centering - simple, but also centers everything in it, uses text align and div.
+-[vertical alignment](https://stackoverflow.com/questions/2939914/how-do-i-vertically-align-text-in-a-div/13515693#13515693) - Centering - centering in modern browsers use flexbox.
+-[flexbox and gap help](https://coryrylan.com/blog/css-gap-space-with-flexbox)
+-[how to hide content](https://webaim.org/techniques/css/invisiblecontent/) - Centering - Accessibility - why not to use display:none or visibility:hidden 
+
+Javascript
+
+-[JS basics MDN](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics)
+-[get the value of a form element](https://www.javascript-coder.com/javascript-form/javascript-get-form/) - various methods to grab values of a form element
+-[querySelector grab any input type](https://stackoverflow.com/questions/9618504/how-to-get-the-selected-radio-button-s-value) - pure JS answer
+-[radio button validation](https://www.delftstack.com/howto/javascript/radio-button-validation-in-javascript/)
+
+Other
+-[why styles don't save with form submission](https://stackoverflow.com/questions/53777151/changing-style-from-javascript-not-saving) - the site reloads on submission, falls back to default style.
+-[stop form refreshing submit](https://stackoverflow.com/questions/19454310/stop-form-refreshing-page-on-submit) - various answers from stopping the submission to returning false onsubmit
 
 ## Author
 
 - Website - [Add your name here](https://www.your-site.com)
 - Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
 - Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
